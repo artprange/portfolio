@@ -16,15 +16,15 @@ export function Projects() {
       <Link to="https://pizza-shop-six.vercel.app/">
         <img src={pizzaShop} alt="" title="Pizza shop - developing" />
       </Link>
+      <Link to="https://we-fit-assignment.vercel.app/">
+        <img src={movies} alt="" title="Movie catalog" />
+      </Link>
 
       <Link to="https://shirt-shop-deployed.vercel.app/">
         <img src={shirtShop} alt="" title="Shirt shop" />
       </Link>
       <Link to="https://trancebook-deployed.vercel.app/">
         <img src={tranceBook} alt="" title="TranceBook" />
-      </Link>
-      <Link to="https://we-fit-assignment.vercel.app/">
-        <img src={movies} alt="" title="Movie catalog" />
       </Link>
     </ImageContainer>
   )
