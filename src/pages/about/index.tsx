@@ -18,7 +18,11 @@ export function About() {
         </h1>
         <h1>
           I have a little over 18 months as a <span>Dev</span> and here is a
-          small compilation of <span>my work</span>.
+          small compilation of{' '}
+          <Link to="/projects">
+            <span>my work</span>
+          </Link>
+          .
         </h1>
       </TextContainer>
       <ImageContainer>
