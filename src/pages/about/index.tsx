@@ -1,11 +1,13 @@
 import { AboutContainer, ImageContainer, TextContainer } from './styles'
 import { Link } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 const imgUrl = 'https://avatars.githubusercontent.com/u/104018176?v=4'
 
 export function About() {
   return (
     <AboutContainer>
+      <SpeedInsights />
       <TextContainer>
         <h1>
           Hello there! I am Arthur, a focused <span>Front-end developer</span>.
