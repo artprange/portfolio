@@ -1,5 +1,6 @@
 import { ImageContainer } from './styles'
 import movies from '../../assets/movies.png'
+import pizzaShop from '../../assets/pizzaShop.png'
 
 import pomodoro from '../../assets/pomodoro.png'
 import shirtShop from '../../assets/shirtShop.png'
@@ -11,6 +12,9 @@ export function Projects() {
     <ImageContainer>
       <Link to="https://pomodoro-timer-delta-eight.vercel.app/">
         <img src={pomodoro} alt="" title="Pomodoro Timer" />
+      </Link>
+      <Link to="https://pizza-shop-six.vercel.app/">
+        <img src={pizzaShop} alt="" title="Pizza shop - developing" />
       </Link>
 
       <Link to="https://shirt-shop-deployed.vercel.app/">
