@@ -25,6 +25,12 @@ export const TextContainer = styled.div`
   span {
     color: ${(props) => props.theme['green-500']};
   }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: 1px;
+  }
 `
 export const ImageContainer = styled.div`
   display: flex;
@@ -33,5 +39,9 @@ export const ImageContainer = styled.div`
 
   img {
     margin-bottom: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `
