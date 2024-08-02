@@ -1,26 +1,24 @@
-import { AboutContainer, ImageContainer, TextContainer } from './styles'
+import { AboutContainer, ImageContainer, TextContainer } from '../styles'
 import { Link } from 'react-router-dom'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 
 const imgUrl = 'https://avatars.githubusercontent.com/u/104018176?v=4'
 
-export function About() {
+export function AboutPortuguese() {
   return (
     <AboutContainer>
       <SpeedInsights />
       <TextContainer>
+        <h1>Olá! Sou o Arthur, dev front-end</h1>
         <h1>
-          Hello there! I am Arthur, a focused <span>Front-end developer</span>.
+          Atuei como advogado por 5 anos mas não consegui ficar distante da
+          minha verdadeira paixão: Tecnologia.
         </h1>
         <h1>
-          I worked 5 years as a lawyer but I could not keep away from my big
-          passion: <span>Tecnology.</span>
-        </h1>
-        <h1>
-          I have a little over 18 months as a <span>Dev</span> and here is a
-          small compilation of{' '}
+          Tenho um pouco mais de 18 meses de experiência como Dev e aqui está um
+          pouco do{' '}
           <Link to="/projects">
-            <span>my work</span>
+            <span> meu trabalho</span>
           </Link>
           .
         </h1>

@@ -13,7 +13,6 @@ export const ImageContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
-    height: 100vh;
   }
 
   img {

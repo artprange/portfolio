@@ -24,6 +24,11 @@ export const TextContainer = styled.div`
 
   span {
     color: ${(props) => props.theme['green-500']};
+    transition: ease 0.5s;
+  }
+
+  span:hover {
+    opacity: 80%;
   }
   @media (max-width: 768px) {
     max-width: 100%;

@@ -31,4 +31,28 @@ export const HeaderContainer = styled.header`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
+`
+
+export const LeftContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  img {
+    object-fit: fill;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+
+    align-items: start;
+
+    h1 {
+      display: none;
+    }
+  }
 `
