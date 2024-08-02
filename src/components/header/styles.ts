@@ -43,7 +43,7 @@ export const LeftContainer = styled.div`
   align-items: center;
 
   img {
-    object-fit: fill;
+    border-radius: 8px;
   }
 
   @media (max-width: 768px) {
