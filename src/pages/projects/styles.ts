@@ -24,3 +24,9 @@ export const ImageContainer = styled.div`
     }
   }
 `
+
+export const Forbidden = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
