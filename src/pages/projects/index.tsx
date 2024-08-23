@@ -4,7 +4,7 @@ import movies from '../../assets/movies.png'
 import pomodoro from '../../assets/pomodoro.png'
 
 import tranceBook from '../../assets/tranceBook.png'
-import store from '../../assets/store.png'
+
 import { Link } from 'react-router-dom'
 
 export function Projects() {
@@ -24,11 +24,6 @@ export function Projects() {
         <Link to="https://trancebook-deployed.vercel.app/">
           <img src={tranceBook} alt="" title="TranceBook" />
           <p>Social media coment section</p>
-        </Link>
-
-        <Link to="https://bike-shop-blush.vercel.app//">
-          <img src={store} alt="" title="Shop" />
-          <p>Store - under development!</p>
         </Link>
       </ImageContainer>
     </>
