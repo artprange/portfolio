@@ -16,7 +16,7 @@ export function Projects() {
           <p>Pomodoro Timer</p>
         </Link>
 
-        <Link to="https://we-fit-assignment.vercel.app/">
+        <Link to="https://we-movies-ten.vercel.app//">
           <img src={movies} alt="" title="Movie catalog" />
           <p>Movie catalog</p>
         </Link>
