@@ -9,14 +9,10 @@ export function AboutEnglish() {
     <AboutContainer>
       <SpeedInsights />
       <TextContainer>
-        <h1>Hello there! I am Arthur, a focused Front-end developer.</h1>
+        <h1>Hello there! I am Arthur, </h1>
+
         <h1>
-          I worked 5 years as a lawyer but I could not keep away from my big
-          passion: Tecnology.
-        </h1>
-        <h1>
-          I have a little over 18 months as a Dev and here is a small
-          compilation of{' '}
+          Working as a Developer for 3 years and here is a small compilation of{' '}
           <Link to="/projects">
             <span>my work</span>
           </Link>

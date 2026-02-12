@@ -9,14 +9,10 @@ export function AboutPortuguese() {
     <AboutContainer>
       <SpeedInsights />
       <TextContainer>
-        <h1>Olá! Sou o Arthur, dev front-end</h1>
+        <h1>Olá! Sou o Arthur,</h1>
+
         <h1>
-          Atuei como advogado por 5 anos mas não consegui ficar distante da
-          minha verdadeira paixão: Tecnologia.
-        </h1>
-        <h1>
-          Tenho um pouco mais de 18 meses de experiência como Dev e aqui está um
-          pouco do{' '}
+          Desenvolvedor Front-end há 3 anos e aqui está um pouco do{' '}
           <Link to="/projects">
             <span> meu trabalho</span>
           </Link>
