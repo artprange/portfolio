@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,8 +14,8 @@
   },
   "dependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
+    "@tanstack/react-router": "^1.170.41",
     "@vercel/speed-insights": "^1.0.12",
-
     "phosphor-react": "^1.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -20,6 +23,7 @@
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
+    "@tanstack/router-plugin": "^1.168.42",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",

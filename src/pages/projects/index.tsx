@@ -1,40 +1,68 @@
-import { ImageContainer } from './styles'
-
-import pomodoro from '../../assets/pomodoro.png'
-
-import tranceBook from '../../assets/tranceBook.png'
-import cafe from '../../assets/cafe.svg'
-import crud from '../../assets/crud.svg'
-
-import { Link } from 'react-router-dom'
+import { Intro, ProjectCard, ProjectGrid } from './styles'
+import { projects } from './projects'
+import { useTranslation } from '../../i18n/useTranslation'
 
 export function Projects() {
+  const { t, lang } = useTranslation()
+
   return (
     <>
-      <ImageContainer>
-        <Link to="https://projedata-assessment.vercel.app/">
-          <img src={crud} alt="" title="TranceBook" />
-          <p>Basic crud</p>
-        </Link>
-        <Link to="https://pomodoro-timer-delta-eight.vercel.app/">
-          <img src={pomodoro} alt="" title="Pomodoro Timer" />
-          <p>Pomodoro Timer</p>
-        </Link>
+      <Intro>
+        <h1>{t('projects.title')}</h1>
+        <p>{t('projects.subtitle')}</p>
+      </Intro>
 
-        {/* <Link to="https://we-movies-ten.vercel.app//">
-          <img src={movies} alt="" title="Movie catalog" />
-          <p>Movie catalog</p>
-        </Link> */}
-        <Link to="https://vercel.com/artpranges-projects/pop-menu-test/7mcuUoWjZMHqxKBheCseQ9gUnnst">
-          <img src={cafe} alt="" title="Movie catalog" />
-          <p>Cafe Landing Page</p>
-        </Link>
+      <ProjectGrid>
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.title}
+            className={project.featured ? 'featured' : undefined}
+          >
+            {/* <a>, não o Link do react-router: estes destinos são externos.
+                target _blank para o visitante não perder o portfólio de vista. */}
+            <a
+              className="thumb"
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src={project.image}
+                alt={`${t('projects.screenshotAlt')} ${project.title}`}
+                loading="lazy"
+              />
+            </a>
 
-        <Link to="https://trancebook-deployed.vercel.app/">
-          <img src={tranceBook} alt="" title="TranceBook" />
-          <p>Social media comment section</p>
-        </Link>
-      </ImageContainer>
+            <div className="body">
+              <h2>{project.title}</h2>
+              <p>{project.description[lang]}</p>
+
+              <ul className="stack">
+                {project.stack.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+
+              <div className="links">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {t('projects.live')} →
+                </a>
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {t('projects.code')} →
+                </a>
+              </div>
+            </div>
+          </ProjectCard>
+        ))}
+      </ProjectGrid>
     </>
   )
 }
