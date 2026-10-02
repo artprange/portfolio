@@ -1,4 +1,5 @@
 import markPaintShop from '../../assets/markPaintShop.webp'
+import dining from '../../assets/dining.webp'
 import cafe from '../../assets/cafe.webp'
 import crud from '../../assets/crud.webp'
 import pomodoro from '../../assets/pomodoro.webp'
@@ -37,6 +38,24 @@ export const projects: Project[] = [
     liveUrl: 'https://mark-paint-shop.vercel.app',
     repoUrl: 'https://github.com/artprange/mark-paint-shop-ultra',
     featured: true,
+  },
+  {
+    title: 'Dining',
+    description: {
+      en: 'Mobile-first app for tracking where you eat: add places, log visits with ratings, and ask it where to go when nobody wants to decide. Request types are generated from the backend OpenAPI spec, so a changed DTO breaks the build instead of production. The public build ships a stateful mock — MSW intercepts the real fetch, so the API client runs exactly as it does against the backend, and anything you create persists in your own browser.',
+      pt: 'App mobile-first para registrar onde vocês comem: cadastrar lugares, anotar visitas com nota e, quando ninguém quer decidir, perguntar aonde ir. Os tipos de requisição são gerados do OpenAPI do back, então um DTO alterado quebra o build em vez da produção. A versão pública usa um mock com estado — o MSW intercepta o fetch de verdade, então o cliente de API roda igual ao que roda contra o back, e o que você cadastrar fica no seu navegador.',
+    },
+    stack: [
+      'React 19',
+      'TypeScript',
+      'TanStack Router',
+      'TanStack Query',
+      'Tailwind 4',
+      'MSW',
+    ],
+    image: dining,
+    liveUrl: 'https://dining-front.vercel.app',
+    repoUrl: 'https://github.com/artprange/dining-front',
   },
   {
     title: 'Inventory UI',
