@@ -34,7 +34,7 @@ export const projects: Project[] = [
       'Vitest',
     ],
     image: markPaintShop,
-    liveUrl: 'https://mark-paint-shop-ultra.vercel.app',
+    liveUrl: 'https://mark-paint-shop.vercel.app',
     repoUrl: 'https://github.com/artprange/mark-paint-shop-ultra',
     featured: true,
   },
