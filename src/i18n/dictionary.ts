@@ -23,14 +23,14 @@ const en = {
 
   'about.greeting': 'Hello there! I am Arthur,',
   'about.intro.before':
-    'Working as a Developer for 3 years and here is a small compilation of',
+    'Full stack developer building web applications. Explore',
   'about.intro.link': 'my work',
   'about.github': 'GitHub',
   'about.avatarAlt': 'Arthur Prange',
 
   'projects.title': 'Projects',
   'projects.subtitle':
-    'Some of what I have built. Each one links to the live site and to the source.',
+    'Selected projects showing how I connect interfaces, API contracts and application logic. Explore the live demos and source code.',
   'projects.live': 'Live site',
   'projects.code': 'Code',
   'projects.screenshotAlt': 'Screenshot of',
@@ -47,14 +47,14 @@ const pt = {
 
   'about.greeting': 'Olá! Sou o Arthur,',
   'about.intro.before':
-    'Desenvolvedor Front-end há 3 anos e aqui está um pouco do',
+    'Desenvolvedor full stack construindo aplicações web. Conheça',
   'about.intro.link': 'meu trabalho',
   'about.github': 'GitHub',
   'about.avatarAlt': 'Arthur Prange',
 
   'projects.title': 'Projetos',
   'projects.subtitle':
-    'Um pouco do que já construí. Cada um leva ao site no ar e ao código.',
+    'Projetos selecionados que mostram como conecto interfaces, contratos de API e lógica de aplicação. Explore as demonstrações e o código.',
   'projects.live': 'Ver no ar',
   'projects.code': 'Código',
   'projects.screenshotAlt': 'Captura de tela de',

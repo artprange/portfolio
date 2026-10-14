@@ -7,9 +7,9 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    :focus{
-        outline: 0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']}    }
+    :focus-visible{
+        outline: 2px solid #b5d6ad; outline-offset: 4px;
+            }
 
     body  {
         background: ${(props) => props.theme['gray-900']};
@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         font-weight: 400;
         font-size: 1rem;
     }
