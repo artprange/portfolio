@@ -37,7 +37,7 @@ const copy = {
     ],
     notes: [
       'Uma experiência de e-commerce que conecta catálogo, autenticação e pagamento por contratos independentes.',
-      'Interface e API alinhadas por tipos gerados de OpenAPI, com uma demonstração interativa que preserva o fluxo de integração.',
+      'Planejador de atividades com React e API GraphQL em Node.js, conectando previsões meteorológicas a recomendações explicáveis.',
     ],
     end: 'Explore as decisões por trás do produto.',
     endText:
@@ -76,7 +76,7 @@ const copy = {
     ],
     notes: [
       'An e-commerce experience connecting catalog, authentication and payment through independent contracts.',
-      'Interface and API aligned through OpenAPI-generated types, with an interactive demo that preserves the integration flow.',
+      'An activity planner with React and a Node.js GraphQL API, turning weather forecasts into explainable recommendations.',
     ],
     end: 'Explore the decisions behind the product.',
     endText:
@@ -145,54 +145,62 @@ export function About() {
           </Link>
         </div>
         <div className="project-list">
-          {projects.slice(0, 2).map((project, i) => (
-            <article className="project" key={project.title}>
-              <a
-                className="project-image"
-                href={project.liveUrl}
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label={`${project.title} — ${t('projects.live')}`}
-              >
-                <img
-                  src={project.image}
-                  alt={`${t('projects.screenshotAlt')} ${project.title}`}
-                  loading="lazy"
-                />
-              </a>
-              <div className="project-info">
-                <span className="project-number">
-                  0{i + 1} /{' '}
-                  {project.title === 'Dining' ? 'WEB APP' : 'E-COMMERCE'}
-                </span>
-                <h3>{project.title}</h3>
-                <p>{c.notes[i]}</p>
-                <ul>
-                  {project.stack.slice(0, 4).map((tech) => (
-                    <li key={tech}>{tech}</li>
-                  ))}
-                </ul>
-                <div className="project-links">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    {t('projects.live')}
-                    <ArrowUpRight size={18} />
-                  </a>
-                  <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    {t('projects.code')}
-                    <ArrowUpRight size={18} />
-                  </a>
+          {projects
+            .filter(
+              (project) =>
+                project.title === 'Mark Paint Shop' ||
+                project.liveUrl === 'https://weather.prange.dev/',
+            )
+            .map((project, i) => (
+              <article className="project" key={project.title}>
+                <a
+                  className="project-image"
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label={`${project.title} — ${t('projects.live')}`}
+                >
+                  <img
+                    src={project.image}
+                    alt={`${t('projects.screenshotAlt')} ${project.title}`}
+                    loading="lazy"
+                  />
+                </a>
+                <div className="project-info">
+                  <span className="project-number">
+                    0{i + 1} /{' '}
+                    {project.title === 'Mark Paint Shop'
+                      ? 'E-COMMERCE'
+                      : 'FULL STACK APP'}
+                  </span>
+                  <h3>{project.title}</h3>
+                  <p>{c.notes[i]}</p>
+                  <ul>
+                    {project.stack.slice(0, 4).map((tech) => (
+                      <li key={tech}>{tech}</li>
+                    ))}
+                  </ul>
+                  <div className="project-links">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {t('projects.live')}
+                      <ArrowUpRight size={18} />
+                    </a>
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {t('projects.code')}
+                      <ArrowUpRight size={18} />
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
         </div>
       </section>
       <section className="approach" aria-labelledby="approach-title">
