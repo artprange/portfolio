@@ -1,5 +1,6 @@
 import markPaintShop from '../../assets/markPaintShop.webp'
 import dining from '../../assets/dining.webp'
+import weather from '../../assets/weather.webp'
 import cafe from '../../assets/cafe.webp'
 import crud from '../../assets/crud.webp'
 import pomodoro from '../../assets/pomodoro.webp'
@@ -56,6 +57,26 @@ export const projects: Project[] = [
     image: dining,
     liveUrl: 'https://dining-front.vercel.app',
     repoUrl: 'https://github.com/artprange/dining-front',
+  },
+  {
+    title: 'Out There — Weather Activity Planner',
+    description: {
+      en: 'Full-stack weather activity planner that helps users choose days for surfing, skiing and sightseeing. A Node.js GraphQL API integrates Open-Meteo forecasts with activity scoring rules, contributing factors and coastal proximity validation. The React interface presents seven-day recommendations, weather charts and an interactive globe, with light and dark themes.',
+      pt: 'Planejador full stack que ajuda a escolher dias para surfar, esquiar e passear com base na previsão do tempo. Uma API GraphQL em Node.js integra previsões do Open-Meteo com regras de pontuação por atividade, fatores explicativos e validação de proximidade da costa. A interface em React apresenta recomendações para sete dias, gráficos meteorológicos e um globo interativo, com temas claro e escuro.',
+    },
+    stack: [
+      'React',
+      'TypeScript',
+      'Node.js',
+      'GraphQL Yoga',
+      'TanStack Query',
+      'Tailwind CSS',
+      'Vitest',
+      'Playwright',
+    ],
+    image: weather,
+    liveUrl: 'https://weather.prange.dev/',
+    repoUrl: 'https://github.com/artprange/weather-activity-planner',
   },
   {
     title: 'Inventory UI',
