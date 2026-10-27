@@ -34,7 +34,7 @@ export const HeaderContainer = styled.header`
   nav a {
     font-size: 0.85rem;
     color: #9c9f9c;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
   }
   nav a:hover,
   nav a.active {
@@ -50,7 +50,7 @@ export const LeftContainer = styled.div`
   display: flex;
   gap: 0.2rem;
   a {
-    padding: 0.5rem;
+    padding: 0.85rem 0.7rem;
     font-size: 0.7rem;
     color: #9c9f9c;
     border-radius: 3px;
