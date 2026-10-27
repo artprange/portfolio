@@ -13,6 +13,7 @@ type Localized = Record<Language, string>
 export type Project = {
   title: string
   description: Localized
+  summary: Localized
   stack: string[]
   image: string
   liveUrl: string
@@ -24,6 +25,10 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: 'Mark Paint Shop',
+    summary: {
+      en: 'E-commerce with URL-driven catalog filters and independent contracts for catalog, authentication and payment.',
+      pt: 'E-commerce com filtros de catálogo na URL e contratos independentes para catálogo, autenticação e pagamento.',
+    },
     description: {
       en: 'Storefront for a custom automotive paint shop. Catalog filters live in the URL and are validated at the route boundary, so a filtered search is a shareable link. Data arrives through route loaders, and the catalog, auth and payment layers each sit behind a contract with both a real and a simulated implementation — which lets the whole app run with no credentials at all.',
       pt: 'Loja de uma oficina de pintura automotiva personalizada. Os filtros do catálogo vivem na URL e são validados na entrada da rota, então uma busca filtrada vira um link compartilhável. Os dados chegam por loaders de rota, e catálogo, autenticação e pagamento ficam atrás de contratos, cada um com uma implementação real e uma simulada — o que deixa a aplicação inteira rodar sem nenhuma credencial.',
@@ -42,6 +47,10 @@ export const projects: Project[] = [
   },
   {
     title: 'Dining',
+    summary: {
+      en: 'A place and restaurant tracker with visit ratings, OpenAPI-generated types and a stateful API demo.',
+      pt: 'App para registrar lugares e avaliar visitas, com tipos gerados de OpenAPI e demonstração com API simulada persistente.',
+    },
     description: {
       en: 'Mobile-first app for tracking where you eat: add places, log visits with ratings, and ask it where to go when nobody wants to decide. Request types are generated from the backend OpenAPI spec, so a changed DTO breaks the build instead of production. The public build ships a stateful mock — MSW intercepts the real fetch, so the API client runs exactly as it does against the backend, and anything you create persists in your own browser.',
       pt: 'App mobile-first para registrar onde vocês comem: cadastrar lugares, anotar visitas com nota e, quando ninguém quer decidir, perguntar aonde ir. Os tipos de requisição são gerados do OpenAPI do back, então um DTO alterado quebra o build em vez da produção. A versão pública usa um mock com estado — o MSW intercepta o fetch de verdade, então o cliente de API roda igual ao que roda contra o back, e o que você cadastrar fica no seu navegador.',
@@ -60,6 +69,10 @@ export const projects: Project[] = [
   },
   {
     title: 'Out There — Weather Activity Planner',
+    summary: {
+      en: 'React and a Node.js GraphQL API turn weather forecasts into explainable recommendations for outdoor activities.',
+      pt: 'React e uma API GraphQL em Node.js transformam previsões do tempo em recomendações explicáveis para atividades.',
+    },
     description: {
       en: 'Full-stack weather activity planner that helps users choose days for surfing, skiing and sightseeing. A Node.js GraphQL API integrates Open-Meteo forecasts with activity scoring rules, contributing factors and coastal proximity validation. The React interface presents seven-day recommendations, weather charts and an interactive globe, with light and dark themes.',
       pt: 'Planejador full stack que ajuda a escolher dias para surfar, esquiar e passear com base na previsão do tempo. Uma API GraphQL em Node.js integra previsões do Open-Meteo com regras de pontuação por atividade, fatores explicativos e validação de proximidade da costa. A interface em React apresenta recomendações para sete dias, gráficos meteorológicos e um globo interativo, com temas claro e escuro.',
@@ -80,6 +93,10 @@ export const projects: Project[] = [
   },
   {
     title: 'Inventory UI',
+    summary: {
+      en: 'Inventory management with schema-validated forms and a mocked API for backend-independent development.',
+      pt: 'Gestão de inventário com formulários validados por schema e API simulada para desenvolver sem depender do backend.',
+    },
     description: {
       en: 'Inventory CRUD with schema-validated forms and an API mocked through MSW, so the interface stays testable without depending on a live backend.',
       pt: 'CRUD de inventário com formulários validados por schema e API simulada com MSW, o que mantém a interface testável sem depender de um backend no ar.',
@@ -91,6 +108,10 @@ export const projects: Project[] = [
   },
   {
     title: 'Pomodoro Timer',
+    summary: {
+      en: 'Focus sessions and history, with reducer-based state management and schema-validated forms.',
+      pt: 'Sessões de foco e histórico, com estado gerenciado por reducer e formulários validados por schema.',
+    },
     description: {
       en: 'Focus-cycle timer with a session history. State runs through a reducer with Immer, and the forms are schema-validated.',
       pt: 'Timer de ciclos de foco com histórico de sessões. O estado passa por um reducer com Immer, e os formulários são validados por schema.',
@@ -102,6 +123,10 @@ export const projects: Project[] = [
   },
   {
     title: 'TranceBook',
+    summary: {
+      en: 'A social feed with posts, replies and comment deletion, built around component composition and derived state.',
+      pt: 'Feed social com publicações, respostas e remoção de comentários, com composição de componentes e estado derivado.',
+    },
     description: {
       en: 'Social media comment section with posts, replies and deletion — an exercise in component composition and derived state.',
       pt: 'Seção de comentários de rede social, com publicações, respostas e remoção — um exercício de composição de componentes e estado derivado.',
@@ -113,6 +138,10 @@ export const projects: Project[] = [
   },
   {
     title: "Henrietta's Cafe",
+    summary: {
+      en: 'A responsive cafe landing page built with HTML and SCSS, focused on layout and typography.',
+      pt: 'Landing page responsiva de cafeteria em HTML e SCSS, com foco em layout e tipografia.',
+    },
     description: {
       en: 'Responsive cafe landing page, built without a framework — HTML and SCSS, focused on layout and typography.',
       pt: 'Landing page responsiva de uma cafeteria, feita sem framework — HTML e SCSS, com foco em layout e tipografia.',

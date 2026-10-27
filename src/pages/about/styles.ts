@@ -4,6 +4,11 @@ export const Home = styled.main`
   --accent: #b5d6ad;
   --muted: #9c9f9c;
   color: #eeeeea;
+  min-width: 0;
+  .hero > *,
+  .project > * {
+    min-width: 0;
+  }
   .eyebrow {
     font-size: 0.72rem;
     letter-spacing: 0.16em;
@@ -120,10 +125,53 @@ export const Home = styled.main`
     margin-top: 0.8rem;
   }
   .project-list {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #53634b #1b1e1a;
+    padding-bottom: 1rem;
+  }
+  .carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .carousel-controls p {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .carousel-controls > div {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .carousel-controls button {
     display: grid;
-    gap: 2rem;
+    place-items: center;
+    min-width: 44px;
+    min-height: 44px;
+    border: 1px solid #53634b;
+    border-radius: 4px;
+    background: #222a20;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  .carousel-controls button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  .carousel-controls button:hover:not(:disabled) {
+    background: #35432f;
   }
   .project {
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: start;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     border: 1px solid #30332e;
@@ -161,6 +209,7 @@ export const Home = styled.main`
     letter-spacing: -0.025em;
   }
   .project h3 {
+    overflow-wrap: anywhere;
     font-size: 1.7rem;
     margin: 1rem 0 0.7rem;
   }
@@ -188,6 +237,7 @@ export const Home = styled.main`
   .project-links {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
   .project-links a {
     color: var(--accent);
